@@ -10,7 +10,7 @@ const DraggableItem = ({ id, label }) => {
     <div
       draggable
       onDragStart={handleDragStart}
-      className="p-2 bg-white border my-2 cursor-pointer"
+      className="p-2 bg-teal-500 font-bold text-white border rounded-md my-2 cursor-pointer"
     >
       {label}
     </div>
