@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light gray background */
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  h1, h2 {
+    color: #3b82f6; /* Indigo color for headers */
+  }
+  
+  .bg-indigo-500 {
+    background-color: #3b82f6; /* Indigo background */
+  }
+  
+  .bg-indigo-600 {
+    background-color: #2563eb; /* Darker indigo for hover state */
+  }
+  
+  .bg-indigo-700 {
+    background-color: #1d4ed8; /* Even darker indigo for active states */
+  }
+  
+  .bg-indigo-800 {
+    background-color: #1e40af; /* Even darker indigo for more prominent hover state */
+  }
+  
+  .text-indigo-500 {
+    color: #3b82f6; /* Indigo text */
+  }
+  
+  .text-indigo-600 {
+    color: #2563eb; /* Darker indigo text for hover state */
+  }
+  
+  .text-indigo-700 {
+    color: #1d4ed8; /* Even darker indigo text for active states */
+  }
+  
