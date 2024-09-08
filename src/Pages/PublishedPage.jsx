@@ -1,11 +1,11 @@
 
 import React from 'react';
 import { useLocalStorage } from '../Hooks/useLocalStorage';
-import Label from '../components/Label';
-import InputBox from '../components/InputBox';
-import Button from '../components/Button';
-import CheckBox from '../components/CheckBox';
-import Table from '../components/Table';
+import Label from '../Components/Label';
+import InputBox from '../Components/InputBox';
+import Button from '../Components/Button';
+import CheckBox from '../Components/CheckBox';
+import Table from '../Components/Table';
 
 const componentMap = {
   Label,
