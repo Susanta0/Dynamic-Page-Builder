@@ -4,18 +4,22 @@ import React, { useState } from 'react';
 import Sidebar from '../Components/Sidebar';
 import Canvas from '../Components/Canvas';
 import { useLocalStorage } from '../Hooks/useLocalStorage';
+import { useNavigate } from 'react-router-dom';
+
 
 const BuilderPage = () => {
   const [layout, setLayout] = useLocalStorage('layout', []);
+  const navigate= useNavigate()
 
-  const handleSaveLayout = () => {
+  const handleSaveLayout = () => {  
     setLayout(layout);
     alert('Layout saved successfully!');
   };
 
   const handlePublish = () => {
     setLayout(layout);  // Save to local storage before opening
-    window.open('/published', '_blank');
+    // window.open('/published', '_blank');
+    navigate(`/published`)
   };
   const handleLoadLayout = () => {
          alert('Layout loaded!');
