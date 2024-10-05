@@ -1,8 +1,11 @@
+import React, { useState } from "react";
 
-
-import React, { useState } from 'react';
-
-const Table = ({ columns = ['Header 1', 'Header 2', 'Header 3'], rows = [['Data 1', 'Data 2', 'Data 3']], updateProps, isPublished }) => {
+const Table = ({
+  columns = ["Header 1", "Header 2", "Header 3"],
+  rows = [["Data 1", "Data 2", "Data 3"]],
+  updateProps,
+  isPublished,
+}) => {
   const [tableData, setTableData] = useState({ columns, rows });
 
   const handleColumnChange = (index, value) => {
@@ -26,7 +29,9 @@ const Table = ({ columns = ['Header 1', 'Header 2', 'Header 3'], rows = [['Data 
         <thead>
           <tr>
             {tableData.columns.map((col, colIndex) => (
-              <th key={colIndex} className="border px-4 py-2">{col}</th>
+              <th key={colIndex} className="border px-4 py-2">
+                {col}
+              </th>
             ))}
           </tr>
         </thead>
@@ -34,7 +39,9 @@ const Table = ({ columns = ['Header 1', 'Header 2', 'Header 3'], rows = [['Data 
           {tableData.rows.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {row.map((cell, colIndex) => (
-                <td key={colIndex} className="border px-4 py-2">{cell}</td>
+                <td key={colIndex} className="border px-4 py-2">
+                  {cell}
+                </td>
               ))}
             </tr>
           ))}
@@ -68,7 +75,9 @@ const Table = ({ columns = ['Header 1', 'Header 2', 'Header 3'], rows = [['Data 
                   <input
                     type="text"
                     value={cell}
-                    onChange={(e) => handleRowChange(rowIndex, colIndex, e.target.value)}
+                    onChange={(e) =>
+                      handleRowChange(rowIndex, colIndex, e.target.value)
+                    }
                     className="border p-2 rounded w-full"
                   />
                 </td>

@@ -2,6 +2,9 @@
 import React from 'react';
 
 const DraggableItem = ({ id, label }) => {
+
+  
+
   const handleDragStart = (e) => {
     e.dataTransfer.setData('componentType', id);
   };

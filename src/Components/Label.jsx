@@ -1,7 +1,6 @@
+import React, { useState } from "react";
 
-import React, { useState } from 'react';
-
-const Label = ({ text = 'Label', updateProps, isPublished }) => {
+const Label = ({ text = "Label", updateProps, isPublished }) => {
   const [labelText, setLabelText] = useState(text);
 
   const handleChange = (e) => {
@@ -16,7 +15,7 @@ const Label = ({ text = 'Label', updateProps, isPublished }) => {
   }
 
   return (
-    <div>
+    <div className="">
       <label className="block font-medium mb-2">{labelText}</label>
       <input
         type="text"

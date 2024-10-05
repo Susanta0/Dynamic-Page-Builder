@@ -1,9 +1,8 @@
-
-import React from 'react';
-import DraggableItem from './DraggableItem';
+import React from "react";
+import DraggableItem from "./DraggableItem";
 
 const Sidebar = () => {
-  const items = ['Label', 'InputBox', 'CheckBox', 'Button', 'Table'];
+  const items = ["Label", "InputBox", "CheckBox", "Button", "Table"];
 
   return (
     <div className="w-1/4 p-4 bg-gray-100 border text-center">

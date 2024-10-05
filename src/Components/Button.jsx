@@ -1,8 +1,8 @@
+import React, { useState } from "react";
 
-
-import React, { useState } from 'react';
-
-const Button = ({ label = 'Button', updateProps, isPublished }) => {
+const Button = ({ label = "Button", updateProps, isPublished }) => {
+  console.log(updateProps);
+  
   const [buttonLabel, setButtonLabel] = useState(label);
 
   const handleChange = (e) => {
